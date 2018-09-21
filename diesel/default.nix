@@ -3,4 +3,5 @@ tenxRustDep {
   name = "diesel";
   src = fetchcrateLocal ./. { blacklistedFiles = ["Cargo.lock"]; };
   dependencies = [dieselDerives];
+  runTest = false;
 }
